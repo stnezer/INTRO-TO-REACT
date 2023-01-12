@@ -7,20 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-
-    <div id="root">
-
+    <div class="one">
+        <h2>HTML CONTENT</h2>
+        <P>HTML is a markup language</P>
     </div>
+    <style>
+        .one {
+            background-color: blue;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            margin: 100px auto;
+            color: white;
+        }
+    </style>
+
+    <div id="root"></div>
 
     <script>
-        function introui() {
+        function introUI() {
 
             var div = document.createElement("div");
             var h2 = document.createElement("h2");
             var p = document.createElement("p");
 
-            h2.innerText = "HTML CONTENT"
-            p.innerText = "html is a markup language"
+            h2.innerText = "JAVASCRIPT CONTENT"
+            p.innerText = "JS is a PROGRAMMING language"
 
             div.appendChild(h2);
             div.appendChild(p);
@@ -30,40 +45,17 @@
             div.style.backgroundColor = "blue";
             div.style.width = "300px";
             div.style.height = "200px";
-            div.style.textAlign = "center";
-            div.style.justifyContent = "center";
-            div.style.paddingTop = "50px"
-            div.style.color = "white";
-
-
-        
-        
-
-
-
+            div.style.padding = "30px";
+            div.style.margin = "100px auto";
+            div.style.textAlign = "center"
+            div.style.color = "yellow"
         };
     
 
-        introui();
+        introUI();
     </script>
 
-    <div class="one">
-        <h2>HTML CONTENT</h2>
-        <P>HTML is a markup language</P>
-    </div>
-    <style>
-        .one {
-            background-color: blue;
-            width: 300px;
-            height: 300px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            padding-top: 50px;
-            margin-top: 20px;
-            color: white;
-        }
-    </style>
+
     
 </body>
 </html>
